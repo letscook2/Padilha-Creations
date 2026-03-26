@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padilha Creations — Handmade Raffia Bags</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Padilha Creations</a>
+      <ul class="nav__links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#unique">Craftsmanship</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__cart" aria-label="Cart" id="cartBtn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#story" onclick="closeMenu()">Our Story</a>
+      <a href="#shop" onclick="closeMenu()">Shop</a>
+      <a href="#unique" onclick="closeMenu()">Craftsmanship</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__texture"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Handcrafted with intention</p>
+      <h1 class="hero__title">Where every thread<br /><em>tells a story.</em></h1>
+      <p class="hero__sub">Natural raffia bags woven by hand — one stitch, one soul, one piece at a time.</p>
+      <a href="#shop" class="btn btn--primary">Explore the Collection</a>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Handwoven &nbsp;·&nbsp; Naturally Sourced &nbsp;·&nbsp; One of a Kind &nbsp;·&nbsp; Made with Love &nbsp;·&nbsp; Artisan Crafted &nbsp;·&nbsp; Slow Fashion &nbsp;·&nbsp;</span>
+      <span>Handwoven &nbsp;·&nbsp; Naturally Sourced &nbsp;·&nbsp; One of a Kind &nbsp;·&nbsp; Made with Love &nbsp;·&nbsp; Artisan Crafted &nbsp;·&nbsp; Slow Fashion &nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ── OUR STORY ── -->
+  <section class="story" id="story">
+    <div class="story__img-col">
+      <div class="story__img-wrap">
+        <div class="story__img story__img--main">
+          <div class="story__img-placeholder story__img-placeholder--1">
+            <div class="placeholder-art">
+              <div class="weave-pattern"></div>
+            </div>
+          </div>
+        </div>
+        <div class="story__img story__img--accent">
+          <div class="story__img-placeholder story__img-placeholder--2">
+            <div class="placeholder-art placeholder-art--sm">
+              <div class="weave-pattern weave-pattern--sm"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="story__text-col">
+      <p class="section-eyebrow">Our Story</p>
+      <h2 class="section-title">Born from<br /><em>patient hands</em><br />& a quiet heart.</h2>
+      <p class="story__body">Padilha Creations was born in a sunlit studio, where every morning begins with the soft sound of raffia being pulled, twisted, and woven into something lasting. Behind each bag is a woman who learned this art from her grandmother — and who pours the same quiet devotion into every single piece.</p>
+      <p class="story__body">We believe accessories should carry meaning. That the things we hold should be made slowly, intentionally, and with love. Each Padilha bag is finished entirely by hand — no factories, no shortcuts, no two alike.</p>
+      <div class="story__stats">
+        <div class="story__stat">
+          <span class="story__stat-num">100%</span>
+          <span class="story__stat-label">Handmade</span>
+        </div>
+        <div class="story__stat">
+          <span class="story__stat-num">Natural</span>
+          <span class="story__stat-label">Raffia Only</span>
+        </div>
+        <div class="story__stat">
+          <span class="story__stat-num">∞</span>
+          <span class="story__stat-label">Love per stitch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SHOP ── -->
+  <section class="shop" id="shop">
+    <div class="shop__header">
+      <p class="section-eyebrow">The Collection</p>
+      <h2 class="section-title">Each piece, <em>unique.</em></h2>
+      <p class="shop__sub">Limited quantities — when it's gone, it's gone.</p>
+    </div>
+    <div class="shop__grid">
+
+      <article class="product-card" data-id="1" data-name="The Lumina Shoulder Bag" data-price="148">
+        <div class="product-card__img-wrap">
+          <div class="product-card__badge">New</div>
+          <div class="product-card__img product-card__img--1">
+            <svg class="product-svg" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+              <!-- Bag silhouette with raffia texture -->
+              <defs>
+                <pattern id="raffia1" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                  <path d="M0 4 Q2 2 4 4 Q6 6 8 4" stroke="#a08060" stroke-width="1.2" fill="none"/>
+                  <path d="M0 8 Q2 6 4 8 Q6 10 8 8" stroke="#b89070" stroke-width="1" fill="none"/>
+                </pattern>
+              </defs>
+              <!-- Strap -->
+              <path d="M65 80 Q70 20 100 20 Q130 20 135 80" stroke="#8b6b4a" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <!-- Body -->
+              <rect x="45" y="78" width="110" height="130" rx="14" fill="url(#raffia1)" stroke="#8b6b4a" stroke-width="2"/>
+              <rect x="45" y="78" width="110" height="130" rx="14" fill="rgba(180,145,100,0.18)"/>
+              <!-- Clasp -->
+              <circle cx="100" cy="118" r="7" fill="#c4a882" stroke="#8b6b4a" stroke-width="1.5"/>
+              <circle cx="100" cy="118" r="3.5" fill="#8b6b4a"/>
+            </svg>
+          </div>
+          <div class="product-card__hover-overlay">
+            <span>Quick View</span>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">The Lumina Shoulder Bag</h3>
+          <p class="product-card__desc">A structured everyday shoulder bag with a signature raffia knot clasp. Compact yet surprisingly spacious.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">$148</span>
+            <button class="btn btn--add-cart" onclick="addToCart(1, 'The Lumina Shoulder Bag', 148)">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card product-card--featured" data-id="2" data-name="The Soleil Tote" data-price="195">
+        <div class="product-card__img-wrap">
+          <div class="product-card__badge product-card__badge--sold">Bestseller</div>
+          <div class="product-card__img product-card__img--2">
+            <svg class="product-svg" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="raffia2" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                  <path d="M0 5 Q2.5 2 5 5 Q7.5 8 10 5" stroke="#9a7550" stroke-width="1.3" fill="none"/>
+                  <path d="M0 10 Q2.5 7 5 10 Q7.5 13 10 10" stroke="#b08860" stroke-width="1" fill="none"/>
+                </pattern>
+              </defs>
+              <!-- Straps -->
+              <path d="M72 85 Q68 18 88 15" stroke="#7a5535" stroke-width="10" fill="none" stroke-linecap="round"/>
+              <path d="M128 85 Q132 18 112 15" stroke="#7a5535" stroke-width="10" fill="none" stroke-linecap="round"/>
+              <!-- Body -->
+              <path d="M42 85 Q38 200 50 230 Q70 248 100 248 Q130 248 150 230 Q162 200 158 85 Z" fill="url(#raffia2)" stroke="#7a5535" stroke-width="2"/>
+              <path d="M42 85 Q38 200 50 230 Q70 248 100 248 Q130 248 150 230 Q162 200 158 85 Z" fill="rgba(160,125,85,0.15)"/>
+              <!-- Top edge -->
+              <line x1="42" y1="85" x2="158" y2="85" stroke="#7a5535" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="product-card__hover-overlay">
+            <span>Quick View</span>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">The Soleil Tote</h3>
+          <p class="product-card__desc">Our iconic open tote — generously sized for beach days, market trips, or whenever you need beauty with function.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">$195</span>
+            <button class="btn btn--add-cart" onclick="addToCart(2, 'The Soleil Tote', 195)">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="3" data-name="The Alma Mini Clutch" data-price="98">
+        <div class="product-card__img-wrap">
+          <div class="product-card__badge product-card__badge--new">Limited</div>
+          <div class="product-card__img product-card__img--3">
+            <svg class="product-svg" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="raffia3" x="0" y="0" width="7" height="7" patternUnits="userSpaceOnUse">
+                  <path d="M0 3.5 Q1.75 1 3.5 3.5 Q5.25 6 7 3.5" stroke="#a58555" stroke-width="1.1" fill="none"/>
+                  <path d="M0 7 Q1.75 4.5 3.5 7 Q5.25 9.5 7 7" stroke="#bb9565" stroke-width="0.9" fill="none"/>
+                </pattern>
+              </defs>
+              <!-- Strap chain  -->
+              <path d="M155 70 Q175 50 175 40 Q175 25 162 25 Q148 25 148 40 Q148 50 158 55" stroke="#c0a060" stroke-width="2.5" fill="none" stroke-dasharray="4 3"/>
+              <!-- Body -->
+              <rect x="30" y="60" width="135" height="95" rx="12" fill="url(#raffia3)" stroke="#7a5535" stroke-width="2"/>
+              <rect x="30" y="60" width="135" height="95" rx="12" fill="rgba(170,135,90,0.15)"/>
+              <!-- Flap -->
+              <path d="M30 60 Q32 95 97.5 100 Q163 95 170 60 Z" fill="#c4a06a" stroke="#7a5535" stroke-width="1.5"/>
+              <path d="M30 60 Q32 95 97.5 100 Q163 95 170 60 Z" fill="url(#raffia3)" opacity="0.6"/>
+              <!-- Clasp -->
+              <rect x="89" y="88" width="22" height="14" rx="7" fill="#c4a882" stroke="#7a5535" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="product-card__hover-overlay">
+            <span>Quick View</span>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">The Alma Mini Clutch</h3>
+          <p class="product-card__desc">An evening-ready mini clutch with a gold chain strap. Small in size, grand in presence.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">$98</span>
+            <button class="btn btn--add-cart" onclick="addToCart(3, 'The Alma Mini Clutch', 98)">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── UNIQUE / CRAFTSMANSHIP ── -->
+  <section class="unique" id="unique">
+    <div class="unique__inner">
+      <div class="unique__text">
+        <p class="section-eyebrow">The Padilha Promise</p>
+        <h2 class="section-title">No two bags<br /><em>are the same.</em></h2>
+        <p class="unique__body">Natural raffia is an organic material — it breathes, it bends, it takes the shape of the hands that work it. Every variation in weave, every slight shift in tone, is not a flaw. It is proof of a human touch.</p>
+        <p class="unique__body">When you carry a Padilha bag, you carry something no one else in the world has. A piece made for you, even before we knew you.</p>
+      </div>
+      <div class="unique__pillars">
+        <div class="unique__pillar">
+          <div class="unique__pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C24 4 8 14 8 28a16 16 0 0032 0C40 14 24 4 24 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M24 16v16M16 28h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Natural Materials</h4>
+          <p>100% natural raffia, ethically harvested from the raffia palm.</p>
+        </div>
+        <div class="unique__pillar">
+          <div class="unique__pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36L24 10l12 26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 28h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Hand-Knotted</h4>
+          <p>Every knot tied by a single artisan from start to finish. No machines involved.</p>
+        </div>
+        <div class="unique__pillar">
+          <div class="unique__pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Slow Made</h4>
+          <p>Each bag takes 8–14 hours of focused work. Because some things shouldn't be rushed.</p>
+        </div>
+        <div class="unique__pillar">
+          <div class="unique__pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6l4.5 9 9.5 1.5-7 6.5 1.5 9.5L24 28l-8.5 4.5 1.5-9.5-7-6.5 9.5-1.5L24 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4>One of a Kind</h4>
+          <p>No two pieces are identical. Yours is truly, irrevocably yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PHOTO GRID (Instagram-style) ── -->
+  <section class="grid-section" id="gallery">
+    <div class="grid-section__header">
+      <p class="section-eyebrow">Follow the journey</p>
+      <h2 class="section-title"><em>@padilhacreations</em></h2>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-grid__item photo-grid__item--tall">
+        <div class="photo-grid__inner photo-grid__inner--1">
+          <div class="photo-grid__overlay"><span>Process</span></div>
+        </div>
+      </div>
+      <div class="photo-grid__item">
+        <div class="photo-grid__inner photo-grid__inner--2">
+          <div class="photo-grid__overlay"><span>Detail</span></div>
+        </div>
+      </div>
+      <div class="photo-grid__item">
+        <div class="photo-grid__inner photo-grid__inner--3">
+          <div class="photo-grid__overlay"><span>Materials</span></div>
+        </div>
+      </div>
+      <div class="photo-grid__item photo-grid__item--wide">
+        <div class="photo-grid__inner photo-grid__inner--4">
+          <div class="photo-grid__overlay"><span>Behind the scenes</span></div>
+        </div>
+      </div>
+      <div class="photo-grid__item">
+        <div class="photo-grid__inner photo-grid__inner--5">
+          <div class="photo-grid__overlay"><span>Finished</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-section__cta">
+      <a href="https://instagram.com/padilhacreations" class="btn btn--outline" target="_blank" rel="noopener">Follow on Instagram</a>
+    </div>
+  </section>
+
+  <!-- ── QUOTE BANNER ── -->
+  <section class="quote-banner">
+    <div class="quote-banner__inner">
+      <blockquote>
+        <p>"I don't make bags.<br /><em>I make heirlooms."</em></p>
+        <cite>— Padilha</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__text">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Custom orders<br /><em>& inquiries.</em></h2>
+        <p class="contact__body">Have a special request? Want a custom color, size, or design? We love creating pieces that fit your world. Reach out — we'd love to hear from you.</p>
+        <div class="contact__details">
+          <p><strong>Email:</strong> hello@padilhacreations.com</p>
+          <p><strong>Response time:</strong> Within 48 hours</p>
+          <p><strong>Custom orders:</strong> 2–4 weeks lead time</p>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Ana Silva" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic...</option>
+            <option value="order">Place an Order</option>
+            <option value="custom">Custom Request</option>
+            <option value="wholesale">Wholesale Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what you have in mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <div class="form-success" id="formSuccess">
+          Thank you — we'll be in touch within 48 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Padilha Creations</span>
+        <p class="footer__tagline">Handwoven with love. Worn with intention.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/padilhacreations" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://pinterest.com/padilhacreations" aria-label="Pinterest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.19-.77 1.27-5.37 1.27-5.37s-.32-.65-.32-1.61c0-1.51.88-2.64 1.97-2.64.93 0 1.38.7 1.38 1.54 0 .94-.6 2.34-.91 3.64-.26 1.09.54 1.97 1.61 1.97 1.93 0 3.23-2.47 3.23-5.39 0-2.23-1.51-3.79-3.67-3.79-2.5 0-3.97 1.87-3.97 3.81 0 .75.29 1.56.65 2 .07.09.08.17.06.26-.07.27-.21.87-.24.99-.04.16-.13.2-.3.12-1.11-.52-1.8-2.14-1.8-3.45 0-2.8 2.03-5.37 5.86-5.37 3.08 0 5.47 2.19 5.47 5.12 0 3.05-1.92 5.5-4.58 5.5-.9 0-1.74-.47-2.03-1.02l-.55 2.07c-.2.77-.74 1.73-1.1 2.32.83.26 1.71.4 2.62.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@padilhacreations" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.83 1.55V6.79a4.85 4.85 0 01-1.06-.1z"/></svg>
+          </a>
+          <a href="mailto:hello@padilhacreations.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h5>Shop</h5>
+          <a href="#shop">All Bags</a>
+          <a href="#shop">New Arrivals</a>
+          <a href="#shop">Bestsellers</a>
+          <a href="#contact">Custom Orders</a>
+        </div>
+        <div class="footer__col">
+          <h5>About</h5>
+          <a href="#story">Our Story</a>
+          <a href="#unique">Craftsmanship</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Info</h5>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Care Guide</a>
+          <a href="#">FAQ</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Padilha Creations. All rights reserved. Made with love.</p>
+    </div>
+  </footer>
+
+  <!-- ── CART DRAWER ── -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer__header">
+      <h3>Your Bag</h3>
+      <button onclick="toggleCart()" aria-label="Close cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems">
+      <div class="cart-empty">
+        <p>Your cart is empty.</p>
+        <a href="#shop" onclick="toggleCart()" class="btn btn--outline">Browse the Collection</a>
+      </div>
+    </div>
+    <div class="cart-drawer__footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn btn--primary btn--full">Proceed to Checkout</button>
+      <p class="cart-drawer__note">Free shipping on orders over $200</p>
+    </div>
+  </aside>
+
+  <!-- ── TOAST ── -->
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
